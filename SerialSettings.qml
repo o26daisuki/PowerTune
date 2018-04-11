@@ -4,9 +4,6 @@ import Qt.labs.settings 1.0
 import QtQuick.VirtualKeyboard 2.1
 import QtSensors 5.0
 import QtQuick.Controls.Styles 1.4
-import QtMultimedia 5.8
-
-
 
 Rectangle {
     id: windowbackround
@@ -55,11 +52,12 @@ Rectangle {
             property alias knockwarning: knockwarn.text
 
         }
-        SoundEffect {
+   /*     SoundEffect {
             id: warnsound
             source: "qrc:/Sounds/alarm.wav"
-        }
+        } */
 
+        /*
         Connections{
             target: Dashboard
             onOdoChanged:{odometer.text = (Dashboard.Odo).toFixed(0) }
@@ -68,7 +66,7 @@ Rectangle {
             onRpmChanged: { if (Dashboard.rpm > rpmwarn.text) {playwarning.start()};}
             onKnockChanged: { if (Dashboard.Knock > knockwarn.text) {playwarning.start()};}
             onBoostPresChanged: { if (Dashboard.BoostPres > boostwarn.text) {playwarning.start()};}
-        }
+        } */
 
 
         Row {
@@ -696,7 +694,7 @@ Rectangle {
             if (dash1.currentIndex == "7") {firstPageLoader.source = "qrc:/Gauges/ForceMeter.qml"};
             if (dash1.currentIndex == "8") {firstPageLoader.source = "qrc:/Gauges/Dyno.qml"};
             if (dash1.currentIndex == "9") {firstPageLoader.source = "qrc:/Gauges/Fueltechdashboard.qml"};
-            if (dash1.currentIndex == "10"){firstPageLoader.source = "qrc:/Gauges/Mediaplayer.qml"};
+           // if (dash1.currentIndex == "10"){firstPageLoader.source = "qrc:/Gauges/Mediaplayer.qml"};
 
 
         }
@@ -716,7 +714,7 @@ Rectangle {
             if (dash2.currentIndex == "7") {secondPageLoader.source = "qrc:/Gauges/ForceMeter.qml"};
             if (dash2.currentIndex == "8") {secondPageLoader.source = "qrc:/Gauges/Dyno.qml"};
             if (dash2.currentIndex == "9") {secondPageLoader.source = "qrc:/Gauges/Fueltechdashboard.qml"};
-            if (dash2.currentIndex == "10"){secondPageLoader.source = "qrc:/Gauges/Mediaplayer.qml"};
+           // if (dash2.currentIndex == "10"){secondPageLoader.source = "qrc:/Gauges/Mediaplayer.qml"};
 
         }
 
@@ -735,7 +733,7 @@ Rectangle {
             if (dash3.currentIndex == "7") {thirdPageLoader.source = "qrc:/Gauges/ForceMeter.qml"};
             if (dash3.currentIndex == "8") {thirdPageLoader.source = "qrc:/Gauges/Dyno.qml"};
             if (dash3.currentIndex == "9") {thirdPageLoader.source = "qrc:/Gauges/Fueltechdashboard.qml"};
-            if (dash3.currentIndex == "10"){thirdPageLoader.source = "qrc:/Gauges/Mediaplayer.qml"};
+           // if (dash3.currentIndex == "10"){thirdPageLoader.source = "qrc:/Gauges/Mediaplayer.qml"};
 
         }
 
@@ -754,12 +752,12 @@ Rectangle {
             if (dash4.currentIndex == "7") {fourthPageLoader.source = "qrc:/Gauges/ForceMeter.qml"};
             if (dash4.currentIndex == "8") {fourthPageLoader.source = "qrc:/Gauges/Dyno.qml"};
             if (dash4.currentIndex == "9") {fourthPageLoader.source = "qrc:/Gauges/Fueltechdashboard.qml"};
-            if (dash4.currentIndex == "10") {fourthPageLoader.source = "qrc:/Gauges/Mediaplayer.qml"};
+          //  if (dash4.currentIndex == "10") {fourthPageLoader.source = "qrc:/Gauges/Mediaplayer.qml"};
 
         }
 
     }
-    Item {
+ /*   Item {
         //Function to play warning sound
         id: playwarning
         function start()
@@ -767,7 +765,7 @@ Rectangle {
 
             if (warnsound.playing == false) warnsound.play();
         }
-    }
+    } */
     // Virtual Keyboard
 
 
@@ -829,7 +827,7 @@ Rectangle {
                 width: windowbackround.width / 5
                 height: windowbackround.height /15
                 font.pixelSize: windowbackround.width / 55
-                model: ["Main Dash", "Adaptronic","Charts", "GPS", "PowerFC Sensors","Race Dash","Race Dash Apexi","G-Force","Dyno","FuelTech","Mediaplayer"]
+                model: ["Main Dash", "Adaptronic","Charts", "GPS", "PowerFC Sensors","Race Dash","Race Dash Apexi","G-Force","Dyno","FuelTech"]
                 property bool initialized: true
                 onCurrentIndexChanged:{select1.selDash1() }
                 Component.onCompleted: {select1.selDash1() }
@@ -840,7 +838,7 @@ Rectangle {
                 width: windowbackround.width / 5
                 height: windowbackround.height /15
                 font.pixelSize: windowbackround.width / 55
-                model: ["Main Dash", "Adaptronic","Charts", "GPS", "PowerFC Sensors","Race Dash","Race Dash Apexi","G-Force","Dyno","FuelTech","Mediaplayer"]
+                model: ["Main Dash", "Adaptronic","Charts", "GPS", "PowerFC Sensors","Race Dash","Race Dash Apexi","G-Force","Dyno","FuelTech"]
                 property bool initialized: true
                 onCurrentIndexChanged:{select2.selDash2() }
                 Component.onCompleted: {select2.selDash2() }
@@ -851,7 +849,7 @@ Rectangle {
                 width: windowbackround.width / 5
                 height: windowbackround.height /15
                 font.pixelSize: windowbackround.width / 55
-                model: ["Main Dash", "Adaptronic","Charts", "GPS", "PowerFC Sensors","Race Dash","Race Dash Apexi","G-Force","Dyno","FuelTech","Mediaplayer"]
+                model: ["Main Dash", "Adaptronic","Charts", "GPS", "PowerFC Sensors","Race Dash","Race Dash Apexi","G-Force","Dyno","FuelTech"]
                 property bool initialized: true
                 onCurrentIndexChanged:{select3.selDash3() }
                 Component.onCompleted: {select3.selDash3() }
@@ -861,7 +859,7 @@ Rectangle {
                 width: windowbackround.width / 5
                 height: windowbackround.height /15
                 font.pixelSize: windowbackround.width / 55
-                model: ["Main Dash", "Adaptronic","Charts", "GPS", "PowerFC Sensors","Race Dash","Race Dash Apexi","G-Force","Dyno","FuelTech","Mediaplayer"]
+                model: ["Main Dash", "Adaptronic","Charts", "GPS", "PowerFC Sensors","Race Dash","Race Dash Apexi","G-Force","Dyno","FuelTech"]
                 property bool initialized: true
                 onCurrentIndexChanged:{select4.selDash4() }
                 Component.onCompleted: {select4.selDash4() }
