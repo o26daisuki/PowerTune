@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>SerialSettings.qml</file>
+        <file>graphics/Tacho_Mitte.png</file>
+        <file>Gauges/DashboardGaugeStyle.qml</file>
+        <file>Gauges/TachometerStyle.qml</file>
+        <file>Gauges/DashAdaptronic.qml</file>
+        <file>Gauges/PFCSensors.qml</file>
+        <file>Gauges/BarGauge.qml</file>
+        <file>Gauges/GPS.qml</file>
+        <file>Gauges/RaceDash.qml</file>
+        <file>GPSTracks/Zwartkops.qml</file>
+        <file>graphics/Racedash800x480.png</file>
+        <file>graphics/MainDash.png</file>
+        <file>Gauges/GaugeNeedle_minus90to180.qml</file>
+        <file>Gauges/GaugeNeedle_minus180to90.qml</file>
+        <file>Gauges/Charts.qml</file>
+        <file>Gauges/RaceDashApexi.qml</file>
+        <file>GPSTracks/test.qml</file>
+        <file>GPSTracks/UtahMotorsportCampusEAST.qml</file>
+        <file>GPSTracks/UtahMotorsportCampusWest.qml</file>
+        <file>GPSTracks/UtahMotorsportCampusBig.qml</file>
+        <file>Gauges/ForceMeter.qml</file>
+        <file>Gauges/SensorTest.qml</file>
+        <file>Gauges/verticalbargauge.qml</file>
+        <file>Gauges/createverticalbargauge.js</file>
+        <file>Gauges/Dyno.qml</file>
+        <file>Gauges/Camera.qml</file>
+        <file>Gauges/createsquaregauge.js</file>
+        <file>graphics/vertrevcanvas.png</file>
+        <file>Gauges/Cluster.qml</file>
+        <file>Gauges/Squaregauge.qml</file>
+        <file>Gauges/Fueltechdashboard.qml</file>
+        <file>Sounds/alarm.wav</file>
+        <file>graphics/next.png</file>
+        <file>graphics/pause.png</file>
+        <file>graphics/play.png</file>
+        <file>graphics/previous.png</file>
+    </qresource>
+</RCC>
